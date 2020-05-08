@@ -10,7 +10,7 @@
         <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="iOS_PersonaligyQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="iOS_PersonaligyQuiz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,31 +87,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P9a-H6-OdS">
-                                <rect key="frame" x="20" y="361" width="46" height="120"/>
+                                <rect key="frame" x="20" y="361" width="374" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogg-VF-NBz">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="Zgk-Cg-KQq" eventType="touchUpInside" id="iSs-EZ-ZHu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0q-iO-kHI">
-                                        <rect key="frame" x="0.0" y="30" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="30" width="374" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="Zgk-Cg-KQq" eventType="touchUpInside" id="bv5-Hc-WjX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejk-87-laN">
-                                        <rect key="frame" x="0.0" y="60" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="60" width="374" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="Zgk-Cg-KQq" eventType="touchUpInside" id="dgf-R6-OzY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaN-xm-qZ6">
-                                        <rect key="frame" x="0.0" y="90" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="90" width="374" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="Zgk-Cg-KQq" eventType="touchUpInside" id="Rq7-Em-Tsz"/>
@@ -226,8 +226,8 @@
                                     <constraint firstItem="51m-nN-9Xr" firstAttribute="top" secondItem="tZm-6d-LhF" secondAttribute="bottom" id="sSc-lF-D3L"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfE-7T-9Cq">
-                                <rect key="frame" x="20" y="76" width="374" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfE-7T-9Cq">
+                                <rect key="frame" x="20" y="76" width="374" height="125"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -251,18 +251,12 @@
                             <constraint firstItem="gfE-7T-9Cq" firstAttribute="leading" secondItem="5Gw-9A-tHC" secondAttribute="leading" constant="20" id="bot-qr-p9A"/>
                             <constraint firstItem="5Gw-9A-tHC" firstAttribute="trailing" secondItem="gfE-7T-9Cq" secondAttribute="trailing" constant="20" id="gkC-7Q-Rab"/>
                             <constraint firstItem="ebl-v1-HN0" firstAttribute="centerX" secondItem="kz3-Hx-PMs" secondAttribute="centerX" id="jlG-sK-TTJ"/>
+                            <constraint firstItem="5Gw-9A-tHC" firstAttribute="trailing" secondItem="P9a-H6-OdS" secondAttribute="trailing" constant="20" id="me0-OI-Jtw"/>
                             <constraint firstItem="5Gw-9A-tHC" firstAttribute="bottom" secondItem="ScC-uQ-5rb" secondAttribute="bottom" constant="20" id="oNN-8g-RTN"/>
                             <constraint firstItem="ScC-uQ-5rb" firstAttribute="leading" secondItem="kz3-Hx-PMs" secondAttribute="leadingMargin" constant="20" id="qgB-OU-QUS"/>
                             <constraint firstItem="5Gw-9A-tHC" firstAttribute="trailing" secondItem="ebl-v1-HN0" secondAttribute="trailing" constant="20" id="rh2-Qg-JN3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Gw-9A-tHC"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="P9a-H6-OdS"/>
-                                <exclude reference="ebl-v1-HN0"/>
-                                <exclude reference="PFk-yi-mJo"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="phI-Oh-ejY"/>
                     <connections>
@@ -286,7 +280,7 @@
                         <outlet property="singleButton3" destination="Ejk-87-laN" id="LDX-Lj-po3"/>
                         <outlet property="singleButton4" destination="ZaN-xm-qZ6" id="l0G-U4-Kch"/>
                         <outlet property="singleStackView" destination="P9a-H6-OdS" id="jnQ-ZB-nRN"/>
-                        <segue destination="iPr-Li-50Z" kind="show" id="CEt-aW-hav"/>
+                        <segue destination="iPr-Li-50Z" kind="show" identifier="ResultsSegue" id="CEt-aW-hav"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNS-pq-4x9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
