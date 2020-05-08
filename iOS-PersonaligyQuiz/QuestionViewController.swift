@@ -66,6 +66,14 @@ class QuestionViewController: UIViewController {
         ])
     ]
     var questionIndex = 0
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ResultsSegue" {
+            let resultisViewController = segue.destination as! ResultsViewController
+            resultisViewController.responses = answersChosen
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
@@ -98,7 +106,7 @@ class QuestionViewController: UIViewController {
         singleButton1.setTitle(answers[0].text, for: .normal)
         singleButton2.setTitle(answers[1].text, for: .normal)
         singleButton3.setTitle(answers[2].text, for: .normal)
-        singleButton3.setTitle(answers[3].text, for: .normal)
+        singleButton4.setTitle(answers[3].text, for: .normal)
     }
     
     func updateMultipleStack(using answers: [Answer]) {
@@ -108,9 +116,9 @@ class QuestionViewController: UIViewController {
         multiSwitch3.isOn = false
         multiSwitch4.isOn = false
         multiLabel1.text = answers[0].text
-        multiLabel1.text = answers[1].text
-        multiLabel1.text = answers[2].text
-        multiLabel1.text = answers[3].text
+        multiLabel2.text = answers[1].text
+        multiLabel3.text = answers[2].text
+        multiLabel4.text = answers[3].text
     }
     
     func updateRangedStack(using answers: [Answer]) {

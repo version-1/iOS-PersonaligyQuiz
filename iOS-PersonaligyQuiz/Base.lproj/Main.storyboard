@@ -295,17 +295,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vgh-8T-HW7">
-                                <rect key="frame" x="148.5" y="381" width="117" height="80.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vgh-8T-HW7">
+                                <rect key="frame" x="20" y="156" width="374" height="552"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01R-OF-HzS">
-                                        <rect key="frame" x="0.0" y="0.0" width="117" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01R-OF-HzS">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="276"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-gd-GYA">
-                                        <rect key="frame" x="0.0" y="60" width="117" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-gd-GYA">
+                                        <rect key="frame" x="0.0" y="276" width="374" height="276"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -315,16 +315,30 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Vgh-8T-HW7" firstAttribute="leading" secondItem="vNo-fZ-1OV" secondAttribute="leading" constant="20" id="75U-JV-jD4"/>
+                            <constraint firstItem="Vgh-8T-HW7" firstAttribute="centerY" secondItem="ep4-3S-6Pe" secondAttribute="centerY" id="RSm-nk-50o"/>
+                            <constraint firstItem="vNo-fZ-1OV" firstAttribute="bottom" secondItem="Vgh-8T-HW7" secondAttribute="bottom" constant="100" id="S5n-kB-ROW"/>
                             <constraint firstItem="Vgh-8T-HW7" firstAttribute="centerX" secondItem="ep4-3S-6Pe" secondAttribute="centerX" id="WTh-km-wWM"/>
-                            <constraint firstItem="Vgh-8T-HW7" firstAttribute="centerY" secondItem="ep4-3S-6Pe" secondAttribute="centerY" id="Yrp-Kk-Uzt"/>
+                            <constraint firstItem="vNo-fZ-1OV" firstAttribute="trailing" secondItem="Vgh-8T-HW7" secondAttribute="trailing" constant="20" id="mA8-lT-Qc1"/>
+                            <constraint firstItem="Vgh-8T-HW7" firstAttribute="top" secondItem="vNo-fZ-1OV" secondAttribute="top" constant="100" id="upJ-1W-bTa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vNo-fZ-1OV"/>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="tLJ-wg-u8m">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="810-iz-d2l"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="810-iz-d2l">
+                            <connections>
+                                <action selector="unwindToQuizIntroductionWithSegue:" destination="iPr-Li-50Z" id="tx3-Ho-Uma"/>
+                                <segue destination="gmT-rP-CyM" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="eCO-w4-MEc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="01R-OF-HzS" id="5mz-jN-nQP"/>
+                        <outlet property="resultDefinitionLabel" destination="iSi-gd-GYA" id="8OX-kS-m0B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPw-mr-Hvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gmT-rP-CyM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2510.144927536232" y="138.61607142857142"/>
         </scene>
