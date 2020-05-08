@@ -17,6 +17,7 @@
 		8407900B246581D40033532C /* iOS_PersonaligyQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407900A246581D40033532C /* iOS_PersonaligyQuizUITests.swift */; };
 		84079019246588BC0033532C /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84079018246588BC0033532C /* QuestionViewController.swift */; };
 		8407901B246588E20033532C /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407901A246588E20033532C /* ResultsViewController.swift */; };
+		8407901D2465BEFA0033532C /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407901C2465BEFA0033532C /* QuestionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8407900C246581D40033532C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84079018246588BC0033532C /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		8407901A246588E20033532C /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		8407901C2465BEFA0033532C /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				84078FEC246581CF0033532C /* IntroductionViewController.swift */,
 				84079018246588BC0033532C /* QuestionViewController.swift */,
 				8407901A246588E20033532C /* ResultsViewController.swift */,
+				8407901C2465BEFA0033532C /* QuestionData.swift */,
 				84078FEE246581CF0033532C /* Main.storyboard */,
 				84078FF1246581D40033532C /* Assets.xcassets */,
 				84078FF3246581D40033532C /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 				84078FED246581CF0033532C /* IntroductionViewController.swift in Sources */,
 				84078FE9246581CF0033532C /* AppDelegate.swift in Sources */,
 				84079019246588BC0033532C /* QuestionViewController.swift in Sources */,
+				8407901D2465BEFA0033532C /* QuestionData.swift in Sources */,
 				8407901B246588E20033532C /* ResultsViewController.swift in Sources */,
 				84078FEB246581CF0033532C /* SceneDelegate.swift in Sources */,
 			);
